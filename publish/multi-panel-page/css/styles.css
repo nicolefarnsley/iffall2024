@@ -1,0 +1,207 @@
+header{
+    text-align: center;
+    padding-top: 135px;
+    background-image: url(../images/water-aesthetic-v8maa5jrij4dn65f.jpg);
+    height: 340px;
+   
+}
+
+image{
+display: block;
+
+}
+
+body{
+    
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+h1{
+font-size: 80px;
+line-height: 35px;
+}
+
+h2{
+    font-size: 30px;
+    line-height: 1px;
+}
+
+section{
+    margin-top: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+section.floating-photo{
+    img {
+        float: left;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 7px;
+        width: 400px;
+        height: 300px;
+        float: right;
+        padding-left: 35px;
+        padding-bottom: 35px;
+        display: block;
+}
+
+
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+    line-height: 1px;
+    padding-top: 32px;
+    padding-bottom: 14px;
+    
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 25px;
+    padding-top: 4px;
+
+
+}
+
+h5{
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 36px;
+
+}
+h6{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 0px;
+
+}
+
+body{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 0;
+}
+
+section > div{
+margin: auto;
+width: 970px;
+text-wrap: wrap;
+
+
+
+}
+
+div.nextsection {
+    margin: auto;
+    width: 970px;
+    text-wrap: wrap;
+    height:678px;
+    
+    
+
+}
+
+
+footer > div{
+    margin: auto;
+    width: 960px;
+    
+    }
+    
+    
+
+
+p{
+padding-top: 0;
+margin-top: 0;
+
+}
+
+section.blue{
+    background-color: rgb(92, 92, 184);
+    align-content: center;
+}
+
+
+
+section.pink{
+    background-color: rgb(171, 76, 195);
+    align-content: center;
+    
+}
+
+
+
+div.thirdsection {
+    margin: auto;
+    width: 715px;
+    text-wrap: wrap;
+    height:291px;
+    text-align: center;
+    
+}
+
+
+
+
+
+.using-flex{
+
+    display: flex;
+flex-wrap: wrap;
+list-style-type: none;
+width: 960px;
+margin: auto;
+padding: 0px;
+padding-bottom: 50px;
+}
+
+.using-flex li{
+width: 50%;
+display: flex;
+
+}
+
+
+
+.grid.using-flex img{
+
+width: 200px;
+height:150px;
+
+}
+
+.grid.using-flex h4{
+padding-top: 0px;
+margin-top: 8px;
+
+
+}
+
+
+#fixed-size-grid-items aside {
+    width: 250px; 
+    font-size: 0.8rem;
+    padding-left: 12px;
+    box-sizing: border-box; 
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+
+footer.pink{
+    background-color: rgb(171, 76, 195);
+    align-content: center;
+    height: 100px;
+    
+}
