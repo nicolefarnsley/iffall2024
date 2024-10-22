@@ -96,7 +96,8 @@ img{
     section.purple{
         background-color: #621f7f;
         width:100;
-        padding-top: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
         margin-top:0;
         margin-bottom:0;
         
@@ -104,33 +105,28 @@ img{
 
     section.pink2{
         background-color: rgb(233, 152, 233);
-        height: 650px;
-        margin-block-start:0;
-        margin-block-end:0;
-        
+        margin-bottom:0;
+        margin-top:0;
+        padding-bottom: 20px;
     }
 
 
-@media (min-width: 800px) {
-       
-    .using-flex{
 
+
+.using-flex{
     display: flex;
-    width: 1800px;
+    width: 100%;
     margin: 0px;
-    padding: 0px;
+    padding-top: 0px;
+    padding-bottom:10px;
     text-wrap: wrap;
     box-sizing: border-box;
     max-width: 100%;
-    }
-        }
+    list-style: none;
+}
 
-
-@media (min-width: 800px) {
-             
- .using-flex li{
-    width: 100%;
-    display: flex;
+.using-flex li{
+    width: 20%;
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 12px;
@@ -139,32 +135,12 @@ img{
     box-sizing: border-box;
     }
 
-}
 
 
-@media (max-width: 800px) {
-   
-    .using-flex{
-
-    display: flex;
-    width: 800px;
-    margin: 0px;
-    text-wrap: wrap;
-    }
-    }
 
 
-    @media (max-width: 800px) {
-        
-.using-flex li{
-width: 100%;
-display: flex;
-margin-left: 35px;
-margin-right: 35px;
-margin-top: 12px;
-}
 
-}
+    
 
 
 
@@ -180,7 +156,8 @@ margin-top: 12px;
 
 div.ingredients{
 
-  
+        max-width: 90%;
+        margin: auto;
         color: rgb(233, 152, 233);
     
 }
@@ -189,8 +166,8 @@ div.ingredients{
 div.instructions {
     
         margin: auto;
+        max-width: 90%;
         padding-top:20px;
-        width: 970px;
         text-wrap: wrap;
         text-align: left;
         
@@ -215,3 +192,43 @@ div.instructions img{
 }
 
 
+.clear{
+    clear: both;
+}
+
+
+
+@media (max-width: 800px) {
+   
+    .using-flex{
+        width: 800px;
+        flex-wrap: wrap;
+    }
+
+    .using-flex li{
+       width: 100%;
+    }
+    .using-flex h4{
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+
+    section.pink{
+        padding-bottom: 6px;
+
+    }
+
+    h1{
+        font-size: 80px;
+        line-height: 1.2;
+    }
+    div.instructions img{
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    
+
+
+    }
