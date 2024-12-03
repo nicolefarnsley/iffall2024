@@ -24,10 +24,10 @@ border: none;
     box-sizing: border-box;
     max-width: 100%;
     list-style: none;
+    justify-content: space-between;
 }
 
 .using-flex li{
-    width: 15%;
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 12px;
@@ -148,6 +148,31 @@ h4{
     }
 }
 
+    /* Define the animation 
+      for the slideshow */
+      @keyframes mobile {
+    
+        /* Calculate the margin-left for 
+        each of the slides */
+        15% {
+            margin-left: 0px;
+        }
+    
+        30% {
+            margin-left: calc( (100vw - 16px) * -1);
+        }
+    
+        45% {
+            margin-left: calc( ((100vw - 16px) * -2));
+        }
+    
+        60% {
+            margin-left: calc( ((100vw - 16px) * -3));
+        }
+        75% {
+            margin-left: calc( ((100vw - 16px) * -4));
+        }
+    }
 
 h1{
 font-family: "nicholas", sans-serif;
@@ -211,20 +236,22 @@ line-height: 120%;
 
     margin-top: 60px;
     text-align: center;
+    img{
+        border: 4px solid rgb(98, 141, 105);
+    }
 }
 
 .Reviews{
     text-align: center;
     padding-left: 32%;
     padding-right: 32%;
-    em{
-        color:rgb(67, 103, 73);
-            
-        }
-
-        
+     
 }
 
+.em{
+    color:rgb(67, 103, 73);   
+    }
+    
 .Heads{
     font-family: "nicholas", sans-serif;
     font-weight: 700;
@@ -245,6 +272,7 @@ line-height: 120%;
         padding-left: 20%;
         padding-right: 20%;
         list-style: none;
+        
     }
     
     .using-grid li{
@@ -262,6 +290,7 @@ line-height: 120%;
     .grid img{
         width: 90%;
         
+        
     }
 
 
@@ -270,9 +299,7 @@ line-height: 120%;
 
     p{
 
-        font-family: "nicholas", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        
         font-size: 20px;
         text-align: left;
         padding-left: 8%;
@@ -302,7 +329,6 @@ line-height: 120%;
             }
             
             .using-flex li{
-                width: 20%;
                 margin-left: 25px;
                 margin-right: 25px;
                 margin-bottom: 0px;
@@ -330,6 +356,9 @@ line-height: 120%;
                     
                     }
 
+                    .ProductionSmall{
+                        font-size: 65px;
+                    }
 
         .Reviews{
              text-align: center;
@@ -365,4 +394,80 @@ line-height: 120%;
         
     }
     
+
+    .slideshow{
+        margin-top: 30px;
+    
+    }
+    
+    /* Styling the area of the slides */
+    #slideshow {
+        
+        width: calc(100vw - 16px);
+       
+    }
+    
+    /* Style each of the sides 
+      with a fixed width and height */
+    .slide {
+        width: calc(100vw - 16px);
+        
+    }
+    
+    /* Add animation to the slides */
+    .slide-wrapper {
+    
+        /* Calculate the total width on the
+        basis of number of slides */
+        width: calc((100vw - 16px) * 5);
+        animation: mobile 15s ease infinite;
+    }
+    
+    /* Set the background color
+      of each of the slides */
+    .slide:nth-child(1) {
+        background-size: 900px;
+        background-position: 75% 0%;
+        
+    }
+    
+    .slide:nth-child(2) {
+        background-size: 1300px;
+        background-position: center;
+        background-position: top;
+    }
+    
+    .slide:nth-child(3) {
+        background-size: 950px;
+        background-position: top;
+    }
+    
+    .slide:nth-child(4) {
+        background-size: 950px;
+        background-position: center;
+        background-position: top;
+    }
+    
+    .slide:nth-child(5) {
+        background-size: 1300px;
+        background-position: center;
+        background-position: top;
+    }
+    
+
+
+}
+
+
+@media(max-width: 389px){
+.Heads{
+    font-size:80px;
+
+}
+
+.ProductionSmall{
+    font-size:60px;
+
+}
+
 }
