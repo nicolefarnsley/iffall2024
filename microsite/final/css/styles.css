@@ -1,0 +1,473 @@
+html{background-color: rgb(255, 244, 196);}
+
+header a{
+    text-decoration: none;
+    color:rgb(98, 141, 105);
+
+}
+
+hr{
+border-style: solid;
+background-color:rgb(98, 141, 105);
+border: none;
+}
+
+.using-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom:3px;
+    margin: 0;
+    text-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 100%;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.using-flex li{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    text-wrap: wrap;
+    box-sizing: border-box;
+    text-align: center;
+    }
+
+h4{
+    font-size: 30px;
+    font-family: "nicholas", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1px;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-top: 30px;
+
+}
+
+.slideshow{
+    margin-top: 30px;
+
+}
+
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    width: 800px;
+    height: 510px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Style each of the sides 
+  with a fixed width and height */
+.slide {
+    float: left;
+    height: 510px;
+    width: 800px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(800px * 5);
+
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 20s ease infinite;
+}
+
+/* Set the background color
+  of each of the slides */
+.slide:nth-child(1) {
+    background: url(https://assets.vogue.com/photos/6712c7e74af60d024f2f2ebd/4:3/w_2560%2Cc_limit/MCDWELI_EC024.jpg);
+    background-size: 950px;
+    background-position: center;
+    background-position: top;
+}
+
+.slide:nth-child(2) {
+    background: url(https://i.abcnewsfe.com/a/f44937cb-9017-4414-9ea9-80c453e990e3/time-1-ht-er-240710_1720631220429_hpMain_12x5.jpg);
+    background-size: 1300px;
+    background-position: center;
+    background-position: top;
+}
+
+.slide:nth-child(3) {
+    background: url(https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2024-10/we-live-in-time-director-1x1-zz-241016-39e993.jpg);
+    background-size: 950px;
+    background-position: center;
+    background-position: top;
+}
+
+.slide:nth-child(4) {
+    background: url(https://www.thedailybeast.com/resizer/v2/Y4WJJ2DIFVB5NIQFIVZCLISHQY.jpg?auth=d9f93a8c07d0daa32b5b2731ac8da725551d16e17b038274c51934e06f198c07&width=800&height=533);
+    background-size: 950px;
+    background-position: center;
+    background-position: top;
+}
+
+.slide:nth-child(5) {
+    background: url(https://coffee-for-two.com/wp-content/uploads/2024/10/we-live-in-time.png?w=1814);
+    background-size: 1300px;
+    background-position: center;
+    background-position: top;
+}
+
+/* Define the animation 
+  for the slideshow */
+  @keyframes slide {
+
+    /* Calculate the margin-left for 
+    each of the slides */
+    15% {
+        margin-left: 0px;
+    }
+
+    30% {
+        margin-left: calc(-800px * 1);
+    }
+
+    45% {
+        margin-left: calc(-800px * 2);
+    }
+
+    60% {
+        margin-left: calc(-800px * 3);
+    }
+    75% {
+        margin-left: calc(-800px * 4);
+    }
+}
+
+    /* Define the animation 
+      for the slideshow */
+      @keyframes mobile {
+    
+        /* Calculate the margin-left for 
+        each of the slides */
+        15% {
+            margin-left: 0px;
+        }
+    
+        30% {
+            margin-left: calc( (100vw - 16px) * -1);
+        }
+    
+        45% {
+            margin-left: calc( ((100vw - 16px) * -2));
+        }
+    
+        60% {
+            margin-left: calc( ((100vw - 16px) * -3));
+        }
+        75% {
+            margin-left: calc( ((100vw - 16px) * -4));
+        }
+    }
+
+h1{
+font-family: "nicholas", sans-serif;
+font-weight: 700;
+font-style: normal;;
+font-size: 160px;
+padding: 0;
+margin: 0;
+color:rgb(98, 141, 105);
+
+}
+
+.home{
+
+    margin-top: 60px;
+    text-align: center;
+    
+}
+
+
+.home2{
+
+    margin-top: 40px;
+    text-align: center;
+    
+}
+
+h2{
+    font-family: "nicholas", sans-serif;
+    line-height: 100%;
+    font-style: italic;
+    font-size: 200px;
+    padding: 0;
+    margin: 0;
+    color:rgb(98, 141, 105);
+}    
+h3{
+    font-family: "nicholas", sans-serif;
+    font-weight: 100;
+    font-style: normal;;
+    font-size: 200px;
+    padding: 0;
+    margin: 0;
+    color:rgb(98, 141, 105);
+    
+    }
+p{
+
+font-family: "nicholas", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 20px;
+text-align: left;
+padding-left: 25%;
+padding-right: 25%;
+line-height: 120%;
+}
+
+
+.plot{
+
+    margin-top: 60px;
+    text-align: center;
+    img{
+        border: 4px solid rgb(98, 141, 105);
+    }
+}
+
+.Reviews{
+    text-align: center;
+    padding-left: 32%;
+    padding-right: 32%;
+     
+}
+
+.em{
+    color:rgb(67, 103, 73);   
+    }
+    
+.Heads{
+    font-family: "nicholas", sans-serif;
+    font-weight: 700;
+    font-style: normal;;
+    font-size: 180px;
+    padding: 0;
+    margin: 0;
+    color:rgb(98, 141, 105);
+    
+    }
+
+
+    .using-grid{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-decoration: none;
+        padding-left: 20%;
+        padding-right: 20%;
+        list-style: none;
+        
+    }
+    
+    .using-grid li{
+        width: 100%;
+        text-decoration: none;
+        font-family: "nicholas", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    color:rgb(98, 141, 105);
+    font-size:20px;
+    padding-bottom: 15px;
+    }
+    .grid img{
+        width: 90%;
+        
+        
+    }
+
+
+
+@media (max-width: 800px) {
+
+    p{
+
+        
+        font-size: 20px;
+        text-align: left;
+        padding-left: 8%;
+        padding-right: 8%;
+        line-height: 120%;
+        }
+
+
+        h1{
+            font-size: 80px;
+            padding: 0;
+            margin: 0;
+            color:rgb(98, 141, 105);
+            }
+  
+
+            .using-flex{
+                display:flex;
+                flex-wrap:wrap;
+                padding: 0px;
+                padding-bottom:0px;
+                margin: 0px;
+                text-wrap: wrap;
+                box-sizing: border-box;
+                max-width: 100%;
+                list-style: none;
+            }
+            
+            .using-flex li{
+                margin-left: 25px;
+                margin-right: 25px;
+                margin-bottom: 0px;
+                text-wrap: wrap;
+                box-sizing: border-box;
+                text-align: left;
+                }
+            
+
+                h4{
+                    font-size: 26px;
+                    font-family: "nicholas", sans-serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    line-height: 30px;
+                    padding: 0;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                
+                }
+
+
+                .Heads{
+                    font-size: 100px;
+                    
+                    }
+
+                    .ProductionSmall{
+                        font-size: 65px;
+                    }
+
+        .Reviews{
+             text-align: center;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+
+    .using-grid{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        text-decoration: none;
+        padding-left: 6%;
+        padding-right: 6%;
+        
+        list-style: none;
+    }
+    
+    .using-grid li{
+        width: 100%;
+        text-decoration: none;
+        font-family: "nicholas", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    color:rgb(98, 141, 105);
+    font-size:20px;
+    padding-bottom: 15px;
+    }
+    .grid img{
+        width: 90%;
+        
+    }
+    
+
+    .slideshow{
+        margin-top: 30px;
+    
+    }
+    
+    /* Styling the area of the slides */
+    #slideshow {
+        
+        width: calc(100vw - 16px);
+       
+    }
+    
+    /* Style each of the sides 
+      with a fixed width and height */
+    .slide {
+        width: calc(100vw - 16px);
+        
+    }
+    
+    /* Add animation to the slides */
+    .slide-wrapper {
+    
+        /* Calculate the total width on the
+        basis of number of slides */
+        width: calc((100vw - 16px) * 5);
+        animation: mobile 15s ease infinite;
+    }
+    
+    /* Set the background color
+      of each of the slides */
+    .slide:nth-child(1) {
+        background-size: 900px;
+        background-position: 75% 0%;
+        
+    }
+    
+    .slide:nth-child(2) {
+        background-size: 1300px;
+        background-position: center;
+        background-position: top;
+    }
+    
+    .slide:nth-child(3) {
+        background-size: 950px;
+        background-position: top;
+    }
+    
+    .slide:nth-child(4) {
+        background-size: 950px;
+        background-position: center;
+        background-position: top;
+    }
+    
+    .slide:nth-child(5) {
+        background-size: 1300px;
+        background-position: center;
+        background-position: top;
+    }
+    
+
+
+}
+
+
+@media(max-width: 389px){
+.Heads{
+    font-size:80px;
+
+}
+
+.ProductionSmall{
+    font-size:60px;
+
+}
+
+}
